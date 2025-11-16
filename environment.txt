@@ -1,0 +1,25 @@
+# This file may be used to create an environment using:
+# $ conda create --name <env> --file <this file>
+# platform: linux-64
+python=3.9.0
+pytorch::pytorch=1.13
+pytorch::pytorch-cuda=11.7
+mkl=2024.0.0
+nvidia/label/cuda-11.7.1::cuda-nvcc
+nvidia/label/cuda-11.8.0::libcublas
+nvidia/label/cuda-11.8.0::libcublas-dev
+nvidia/label/cuda-11.7.0::libcusparse
+nvidia/label/cuda-11.7.0::libcusparse-dev
+nvidia/label/cuda-11.7.0::libcufft
+nvidia/label/cuda-11.7.0::libcufft-dev
+gcc_linux-64>=6.0,<=11.5
+gxx_linux-64>=6.0,<=11.5
+scipy
+numpy
+matplotlib
+imageio=2.19.3
+psutil
+seaborn
+pandas
+tqdm
+tensorboard

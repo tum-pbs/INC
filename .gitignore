@@ -1,0 +1,15 @@
+out/
+logs/
+Dataset
+__pycache__/
+INC_Data
+Burgers_results/
+KS_results/
+BFS/
+build/
+dist/
+PytorchPiso.egg-info/
+*.pyc
+*.out
+Split_dataset.py
+*.ipynb
