@@ -489,6 +489,7 @@ If you use this code in your research, please cite our paper:
 
 This work builds upon:
 - **PICT solver** (Franz et al., 2025)
+- **Solver-in-the-Loop** (Um et al., 2020)
 - **Fourier Neural Operator** (Li et al., 2020)
 - **DeepONet** (Lu et al., 2021)
 - **PISO Algorithm** (Issa, 1986)
