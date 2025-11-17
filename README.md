@@ -1,7 +1,4 @@
-# INC: Implicit Neural Correction for PDE Solvers
-<p align="center">
-  <img src="./figures//favicon.svg" alt="INC logo" width="128">
-</p>
+# <img src="./figures/favicon.svg" alt="INC logo" width="42" align="center"> INC: Implicit Neural Correction for PDE Solvers
 
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
