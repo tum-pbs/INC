@@ -1,4 +1,8 @@
 # INC: Implicit Neural Correction for PDE Solvers
+<p align="center">
+  <img src="./figures//favicon.svg" alt="INC logo" width="128">
+</p>
+
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Python 3.8](https://img.shields.io/badge/python-3.8-blue.svg)](https://www.python.org/downloads/release/python-380/)
@@ -6,6 +10,10 @@
 [![CUDA 11.7](https://img.shields.io/badge/CUDA-11.7-76B900.svg)](https://developer.nvidia.com/cuda-toolkit)
 
 ## Overview
+
+<p align="center">
+  <img src="./figures/tcf3d-viz-comp01.jpg" alt="INC overview visualization" width="85%">
+</p>
 
 **INC** (Implicit Neural Correction) is a novel hybrid framework that combines classical numerical PDE solvers with neural network-based correction terms to achieve accurate, stable, and efficient simulations of complex dynamical systems. This repository contains the official implementation of the research paper on implicit neural corrections for time-stepping PDE solvers.
 
