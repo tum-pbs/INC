@@ -390,8 +390,7 @@ python scripts/Train_1D.py \
 ```bash
 python scripts/Train_BFS.py \
   --mode test \
-  --model_id 250320-153045 \
-  --forward_step 1200
+  --model_id 250316-165159 \
 ```
 
 #### Visualization & Analysis
@@ -405,7 +404,7 @@ python analysis/Plot_KS.py --model_id 251016-174722
 
 **BFS flow results**:
 ```bash
-python analysis/Plot_BFS.py --model_id 250320-153045
+python analysis/Plot_BFS.py --model_id 250316-165159
 ```
 
 ### Directory Structure After Training

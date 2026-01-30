@@ -1,7 +1,7 @@
 """
 Neural network models for 1D and 2D problems
 """
-from .models_1d import *
+# from .models_1d import *
 
 __all__ = []
 
