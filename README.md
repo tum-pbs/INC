@@ -5,7 +5,7 @@
 [![Python 3.8](https://img.shields.io/badge/python-3.8-blue.svg)](https://www.python.org/downloads/release/python-380/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-1.13-ee4c2c.svg)](https://pytorch.org/)
 [![CUDA 11.7](https://img.shields.io/badge/CUDA-11.7-76B900.svg)](https://developer.nvidia.com/cuda-toolkit)
-[![Homepage](https://tum-pbs.github.io/inc-paper/)
+[![Homepage](https://img.shields.io/badge/Homepage-Website-brightgreen.svg)](https://tum-pbs.github.io/inc-paper/)
 ## Overview
 
 <p align="center">
