@@ -1,20 +1,20 @@
-# <img src="./figures/favicon.svg" alt="INC logo" width="42" align="center"> INC: Implicit Neural Correction for PDE Solvers
+# <img src="./figures/favicon.svg" alt="INC logo" width="42" align="center"> INC: Indirect Neural Correction for PDE Solvers
 
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Python 3.8](https://img.shields.io/badge/python-3.8-blue.svg)](https://www.python.org/downloads/release/python-380/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-1.13-ee4c2c.svg)](https://pytorch.org/)
 [![CUDA 11.7](https://img.shields.io/badge/CUDA-11.7-76B900.svg)](https://developer.nvidia.com/cuda-toolkit)
-
+[![Homepage](https://tum-pbs.github.io/inc-paper/)
 ## Overview
 
 <p align="center">
   <img src="./figures/tcf3d-viz-comp01.jpg" alt="INC overview visualization" width="85%">
 </p>
 
-**INC** (Implicit Neural Correction) is a novel hybrid framework that combines classical numerical PDE solvers with neural network-based correction terms to achieve accurate, stable, and efficient simulations of complex dynamical systems. This repository contains the official implementation of the research paper on implicit neural corrections for time-stepping PDE solvers.
+**INC** (An Indirect Neural Corrector for Auto-Regressive Hybrid PDE Solvers) is a novel hybrid framework that combines classical numerical PDE solvers with neural network-based correction terms to achieve accurate, stable, and efficient simulations of complex dynamical systems. This repository contains the official implementation of the research paper on indirect neural corrections for time-stepping PDE solvers.
 
-The key innovation is the **implicit correction mechanism**: instead of predicting the solution directly, neural networks predict correction terms that are seamlessly integrated into classical numerical solvers (e.g., finite difference (WENO schemes), pseudo-spectral method, and PISO algorithm). This hybrid approach achieves:
+The key innovation is the **indirect correction mechanism**: instead of predicting the solution directly, neural networks predict correction terms that are seamlessly integrated into classical numerical solvers (e.g., finite difference (WENO schemes), pseudo-spectral method, and PISO algorithm). This hybrid approach achieves:
 
 - **Superior long-term stability** compared to purely data-driven methods
 - **Computational efficiency** by enabling coarser spatial and temporal resolutions
@@ -33,9 +33,9 @@ The key innovation is the **implicit correction mechanism**: instead of predicti
 
 ## Methodology: From Theory to Practice
 
-### Core Concept: Implicit Neural Correction
+### Core Concept: Indirect Neural Correction
 
-Classical PDE solvers discretize equations in space and time. However, discretization introduces errors, especially on coarse grids. The INC framework addresses this by learning **correction terms** $s(\mathbf{u})$ that are implicitly integrated into the time-stepping scheme:
+Classical PDE solvers discretize equations in space and time. However, discretization introduces errors, especially on coarse grids. The INC framework addresses this by learning **correction terms** $s(\mathbf{u})$ that are indirectly integrated into the time-stepping scheme:
 
 $$
 \mathbf{u}^{n+1} = \mathcal{S}(\mathbf{u}^n, s(\mathbf{u}^n), \Delta t)
@@ -349,7 +349,7 @@ python scripts/Train_1D.py \
 
 **Key training arguments**:
 - `--task`: Choose `KS` for Kuramoto-Sivashinsky equation
-- `--correction_term`: Use `INC` for implicit neural correction
+- `--correction_term`: Use `INC` for indirect neural correction
 - `--down_ratio`: Downsampling factor, fixed at 8 for KS
 - `--mstep`: Number of time steps to predict during training
 - `--test_steps`: Number of evaluation steps
@@ -481,7 +481,7 @@ If you use this code in your research, please cite our paper:
   title={{INC}: An Indirect Neural Corrector for Auto-Regressive Hybrid {PDE} Solvers},
   author={Hao Wei, Aleksandra Franz, Björn Malte List, Nils Thuerey},
   booktitle={The Thirty-ninth Annual Conference on Neural Information Processing Systems},
-  year={2025},
+  year={2025}
 }
 ```
 
