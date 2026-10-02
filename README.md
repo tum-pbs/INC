@@ -1,4 +1,4 @@
-# <img src="./figures/favicon.svg" alt="INC logo" width="42" align="center"> INC: Indirect Neural Correction for PDE Solvers
+# <img src="./figures/favicon.svg" alt="INC logo" width="42" align="center"> INC: Indirect Neural Corrector for PDE Solvers
 
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
